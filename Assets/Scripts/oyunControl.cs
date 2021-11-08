@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class oyunControl : MonoBehaviour
 {
     public GameObject zombi;
-    float zaman = 5f;
+    float zaman = 2f;
     float zamansayaci = 100;
     public Text zamansayacText;
     private int puan;  // private olursa bu deðiþkene baþka yerden eriþemeyiz.
@@ -29,7 +29,7 @@ public class oyunControl : MonoBehaviour
         {
              Vector3 rastgele = new Vector3(Random.Range(185f, 322f), 28.1f, Random.Range(130f, 300f));
              Instantiate(zombi, rastgele, Quaternion.identity);
-             zaman = 5f;
+             zaman = 2f;
         }
 
     }
